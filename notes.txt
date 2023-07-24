@@ -1,2 +1,2 @@
-image-width: 30% height: 100%; Logo-bg: near-translucent; Logo: contrasting white;
-Title: contrasting white font: norse-bold; Three sections: motivational text height: 35%, width: 70%; Form: height: 30%, width: 70%, title, fname, lname, email, phonen, password, confirmpw; footersubmitsection: height: 35%, width: 70%, contains createaccount btn, login link; Size fonts with rem and other things with px or %;
+image-width: 40% height: 100%, image-credits, text with "Masaaki Komori" and link: https://unsplash.com/photos/NoXUQ54pDac; Logo-bg: near-translucent; Logo: contrasting white;
+Title: contrasting white font: norse-bold; Three sections: motivational text height: 35%, width: 70%; Form: height: 30%, width: 70%, title, fname, lname, email, phonen, password, confirmpw; footersubmitsection: height: 35%, width: 70%, contains createaccount btn, login link; Size fonts with rem and other things with px or %; Validate passwords with JS. 
