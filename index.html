@@ -15,6 +15,48 @@
                 <h1 id="title">PaintedPorch</h1>
                 <img src="images/odin-logo.png" alt="odin-logo" id="logo">
             </div>
+            <p class="credits">Photo by Masaaki Komori on Unsplash</p>
+        </div>
+        <div id="rightmost">
+            <div id="upper">
+                <div id="textpart">
+                    <p class="copy">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias provident exercitationem corporis?</p>
+                    <p class="confirmation">Lorem <span class="italic">ipsum</span> dolor sit.</p>
+                </div>
+                <div id="formdiv">
+                    <p class="intro">Lorem, ipsum dolor!</p>
+                    <form class="form" action="datareceived.txt" id="form" method="POST">
+                        <div class="bundle">
+                            <label class="label" for="firstname">FIRST NAME</label>
+                            <input class="input" type="text" name="firstname" id="firstname" minlength="1" maxlength="100" required>
+                        </div>
+                        <div class="bundle">
+                            <label class="label" for="lastname">LAST NAME</label>
+                            <input class="input" type="text" id="lastname" name="lastname" minlength="1" maxlength="100" required>
+                        </div>
+                        <div class="bundle">
+                            <label class="label" for="email">EMAIL</label>
+                            <input class="input" type="email" name="email" id="email" minlength="1" maxlength="100" required>
+                        </div>
+                        <div class="bundle">
+                            <label class="label" for="phonenum">PHONE NUMBER</label>
+                            <input class="input" type="tel" name="phonenumber" id="phonenum" minlength="1" maxlength="100" required>
+                        </div>
+                        <div class="bundle">
+                            <label class="label" for="password">PASSWORD</label>
+                            <input class="input" type="password" name="password" id="password" minlength="1" maxlength="100" required>
+                        </div>
+                        <div class="bundle">
+                            <label class="label" for="confirmpw">CONFIRM PASSWORD</label>
+                            <input class="input" type="password" name="confirmpw" id="confirmpw" minlength="1" maxlength="100" required>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="lower">
+                <button class="create" type="submit">Create Account</button>
+                <p class="login">Already have an account? <a href="#" class="loginlink">Log in</a></p>
+            </div>
         </div>
     </div>
 </body>
