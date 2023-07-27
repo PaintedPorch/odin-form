@@ -51,6 +51,7 @@
 }
 
 .credits {
+    width: 100%;
     position: relative;
     top: 73%;
     color: white;
@@ -71,33 +72,41 @@
 #upper {
     width: 100%;
     height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #textpart {
     width: 100%;
-    height: 40%;
+    height: 45%;
     background-color: var(--alternatebgcolor);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
-    padding-bottom: 10%;
     border-bottom: 4px solid rgb(238, 238, 238);
     gap: 15px;
 }
 
 .copy {
     width: 80%;
-    height: 30%;
+    height: 45px;
     margin-left: var(--textmargin);
     font-weight: bold;
+    min-height: 25px;
+    max-height: 100px;
 }
 
 .confirmation {
     width: 80%;
-    height: 10%;
+    height: 1rem;
     margin-left: var(--textmargin);
     font-weight: bold;
+    min-height: 10px;
+    max-height: 20px;
+    margin-bottom: 30px;
 }
 
 .italic {
@@ -106,31 +115,31 @@
 
 #formdiv {
     width: 100%;
-    height: 60%;
+    height: 52.5%;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .intro {
     margin-left: var(--textmargin);
-    margin-top: 5%;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 1.1rem;
 }
 
 #form {
-    height: 50%;
+    height: 60%;
     display: flex;
     flex-wrap: wrap;
     margin-left: var(--textmargin);
     gap: 10px;
-    padding-top: 2.5%;
-    padding-bottom: 5%;
+    padding-top: 20px;
 }
 
 .bundle {
     width: 45%;
-    height: 32.5%;
+    height: 25%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -140,12 +149,13 @@
 .label {
     height: 40%;
     font-weight: 100;
-    font-size: 12px;
+    font-size: .75rem;
     color: rgb(66, 66, 66);
 }
 
 .input {
-    height: 60%;
+    width: 90%;
+    height: 20px;
     border-radius: 5px;
     border-color: black;
     border: 2px solid black;
@@ -161,14 +171,13 @@
 
 #lower {
     width: 100%;
-    height: 30%;
+    height: 32.5%;
     background-color: var(--alternatebgcolor);
     border-top: 4px solid rgb(238, 238, 238);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    padding-top: 8%;
     gap: 15px;
 }
 
@@ -180,6 +189,7 @@
     border-radius: 5px;
     padding: 10px 20px;
     border: 2px solid var(--borders);
+    margin-top: 35px;
 }
 
 .login {
@@ -190,4 +200,65 @@
     color: rgb(231, 177, 231);
     text-decoration: none;
     font-weight: bold;
+}
+
+@media (max-width: 675px)
+{
+    #title {
+        font-size: 1.8rem;
+    }
+    #logo {
+        height: 60px;
+        width: 48px;
+    }
+}
+@media (max-width: 550px)
+{
+    #title {
+        font-size: 1.6rem;
+    }
+    .copy {
+        height: 60px;
+    }
+}
+@media (min-width: 900px)
+{
+    #title {
+        font-size: 3rem;
+    }
+    #logo {
+        height: 85px;
+        width: 68px;
+    }
+    .copy, .confirmation {
+        font-size: 19px;
+    }
+    .intro {
+        font-size: 22px;
+    }
+    .create {
+        font-size: 17px;
+    }
+    .login {
+        font-size: 17px;
+    }
+    #title-container {
+        gap: 25px;
+    }
+}
+@media (min-width: 1100px)
+{
+    #title {
+        font-size: 3.3rem;
+    }
+    #logo {
+        height: 100px;
+        width: 80px;
+    }
+    .confirmation {
+        margin-bottom: 40px;
+    }
+    #title-container {
+        gap: 35px;
+    }
 }
