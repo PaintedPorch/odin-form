@@ -25,7 +25,7 @@
                 </div>
                 <div id="formdiv">
                     <p class="intro">Lorem, ipsum dolor!</p>
-                    <form class="form" action="datareceived.txt" id="form" method="POST">
+                    <form class="form" id="form" method="POST" onSubmit="return checkPassword(this)">
                         <div class="bundle">
                             <label class="label" for="firstname">FIRST NAME</label>
                             <input class="input" type="text" name="firstname" id="firstname" minlength="1" maxlength="100" required>
@@ -44,11 +44,11 @@
                         </div>
                         <div class="bundle">
                             <label class="label" for="password">PASSWORD</label>
-                            <input class="input" type="password" name="password" id="password" minlength="1" maxlength="100" required>
+                            <input class="input pw" type="password" name="password" id="password" minlength="1" maxlength="100" required>
                         </div>
                         <div class="bundle">
                             <label class="label" for="confirmpw">CONFIRM PASSWORD</label>
-                            <input class="input" type="password" name="confirmpw" id="confirmpw" minlength="1" maxlength="100" required>
+                            <input class="input pwcheck" type="password" name="confirmpw" id="confirmpw" minlength="1" maxlength="100" required>
                         </div>
                     </form>
                 </div>
